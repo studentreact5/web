@@ -2,16 +2,17 @@
   font-family: "Foff1";
   src: url(../fonts/PbytFmztEwbIoce9zqY.woff2) format("woff2");
 }
+
 @font-face {
   font-family: "Foff2";
   src: url(../fonts/i7dZIFdwYjGaAMFtZd_QA3xXSKZqhr-TenSHq5PPq4f3.woff2)
     format("woff2");
 }
+
 @font-face {
   font-family: "Foff3";
   src: url(../fonts/PbytFmztEwbIoceyzqYhQA.woff2) format("woff2");
 }
-
 
 html {
   overflow-x: hidden;
@@ -30,13 +31,15 @@ body {
   padding: 0;
   height: 100vh;
 }
+
 .center-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
 }
+
 p {
   font-family: "Foff3", sans-serif;
   font-size: 20px;
@@ -63,21 +66,6 @@ h2 {
   text-align: center;
   margin-top: 40px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 button {
   align-items: center;
@@ -169,18 +157,16 @@ button:hover .button-text {
 }
 
 .vertical-buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
 }
 
 button {
-    margin: 5px 0;
-    -webkit-tap-highlight-color: transparent;
+  margin: 5px 0;
+  -webkit-tap-highlight-color: transparent;
 }
-
-
 
 .rounded-img {
   border-radius: 50%;
@@ -189,13 +175,12 @@ button {
   margin-top: 30px;
   border: 1vh solid transparent;
   background-image: radial-gradient(circle at right, #ac5019, #902648),
-                    radial-gradient(circle at left, #902648, #ac5019);
+    radial-gradient(circle at left, #902648, #ac5019);
   background-origin: border-box;
   background-clip: content-box, border-box, border-box, border-box;
   /* Elevation */
   box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.863);
 }
-
 
 /*
     Auther: Abdelrhman Said
@@ -214,8 +199,6 @@ button {
   outline: none !important;
   -webkit-tap-highlight-color: transparent;
 }
-
-
 
 .wrapper {
   display: inline-flex;
@@ -288,7 +271,7 @@ button {
 .wrapper .telegram:hover,
 .wrapper .telegram:hover .tooltip,
 .wrapper .telegram:hover .tooltip::before {
-  background: #1877F2;
+  background: #1877f2;
   color: #ffffff;
 }
 
@@ -298,8 +281,6 @@ button {
   background: #333333;
   color: #ffffff;
 }
-
-
 
 .wrapper .mail:hover,
 .wrapper .mail:hover .tooltip,
@@ -315,8 +296,6 @@ button {
   color: #ffffff;
 }
 
-
-
 .popup {
   position: absolute;
   top: 50%;
@@ -324,7 +303,7 @@ button {
   transform: translate(-50%, -50%);
   backdrop-filter: blur(10px);
   background-color: #ffffff04;
-  border: .2px solid #ffffff3b;
+  border: 0.2px solid #ffffff3b;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
   z-index: 9999;
@@ -332,9 +311,7 @@ button {
   box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.863);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
-
 }
-
 
 .close-btn {
   position: absolute;
@@ -349,6 +326,7 @@ button {
   border-radius: 2vh;
   box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.863);
 }
+
 .close-button {
   width: 30px;
   height: 30px;
@@ -367,7 +345,6 @@ button {
   box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.863);
 }
 
-
 @media (max-width: 768px) {
   .popup {
     width: 80%;
@@ -382,7 +359,6 @@ button {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
-  
 }
 
 .screen-bg {
@@ -391,13 +367,11 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.139); 
+  background-color: rgba(255, 255, 255, 0.139);
   display: none;
   z-index: 9997;
   backdrop-filter: blur(3px);
 }
-
-
 
 .footer {
   position: absolute;
@@ -412,11 +386,13 @@ button {
   border-top: 1px solid #ffffff3b;
   border-radius: 2vh;
 }
+
 a {
   color: #0b8772;
   text-decoration: none;
 }
-.up-btn-show-footer{
+
+.up-btn-show-footer {
   /* place this in right top of parent */
   position: absolute;
   top: -8px;
@@ -431,9 +407,9 @@ a {
   z-index: 9999;
   border-radius: 2vh;
   box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.863);
-  
 }
-.up-btn-s-ftr{
+
+.up-btn-s-ftr {
   width: 30px;
   height: 30px;
   border-radius: 50%;

@@ -30,10 +30,10 @@ function openPopup() {
 
   setTimeout(function () {
     popup.style.display = "block";
-  popup.style.opacity = "1";
-  screenBg.style.display = "block";
+    popup.style.opacity = "1";
+    screenBg.style.display = "block";
   }, 300);
-  }
+}
 
 function closePopup() {
   const popup = document.querySelector(".popup");
@@ -42,12 +42,9 @@ function closePopup() {
   setTimeout(function () {
     popup.style.display = "none";
     popup.style.opacity = "0";
-    screenBg.style.display = "none"; 
+    screenBg.style.display = "none";
   }, 300);
-  
 }
-
-
 
 const openButton = document.querySelector("#lt");
 openButton.addEventListener("click", openPopup);
@@ -86,19 +83,17 @@ for (var i = 0; i < lists.length; i++) {
   }
 }
 
+const screenBg = document.querySelector(".screen-bg");
 
-const screenBg = document.querySelector('.screen-bg');
-  
-screenBg.addEventListener('click', closePopup);
+screenBg.addEventListener("click", closePopup);
 
+const sftrBtn = document.querySelector(".up-btn-show-footer");
 
-const sftrBtn = document.querySelector('.up-btn-show-footer')
-
-sftrBtn.addEventListener('click', function(){
-  const footer = document.querySelector('.footer')
-  footer.style.display = 'block'
-  footer.style.opacity = '1'
-  footer.style.transition = '0.3s ease-in-out'
-  footer.style.bottom = '0px'
-  sftrBtn.style.display = 'none'
-})
+sftrBtn.addEventListener("click", function () {
+  const footer = document.querySelector(".footer");
+  footer.style.display = "block";
+  footer.style.opacity = "1";
+  footer.style.transition = "0.3s ease-in-out";
+  footer.style.bottom = "0px";
+  sftrBtn.style.display = "none";
+});
