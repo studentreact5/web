@@ -359,6 +359,10 @@ button {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
+  .up-btn-s-ftr,
+  .up-btn-show-footer {
+    display: none;
+  }
 }
 
 .screen-bg {
