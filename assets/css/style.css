@@ -67,7 +67,7 @@ h2 {
   margin-top: 40px;
 }
 
-button {
+.button {
   align-items: center;
   position: fixed;
   display: inline-block;
@@ -82,12 +82,12 @@ button {
   font-family: inherit;
 }
 
-button.learn-more {
+.button.learn-more {
   width: 12rem;
   height: auto;
 }
 
-button.learn-more .circle {
+.button.learn-more .circle {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: relative;
   display: block;
@@ -98,7 +98,7 @@ button.learn-more .circle {
   border-radius: 1.625rem;
 }
 
-button.learn-more .circle .icon {
+.button.learn-more .circle .icon {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   top: 0;
@@ -107,7 +107,7 @@ button.learn-more .circle .icon {
   background: #fff;
 }
 
-button.learn-more .circle .icon.arrow {
+.button.learn-more .circle .icon.arrow {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   left: 0.625rem;
   width: 1.125rem;
@@ -115,7 +115,7 @@ button.learn-more .circle .icon.arrow {
   background: none;
 }
 
-button.learn-more .circle .icon.arrow::before {
+.button.learn-more .circle .icon.arrow::before {
   position: absolute;
   content: "";
   top: -0.29rem;
@@ -127,7 +127,7 @@ button.learn-more .circle .icon.arrow::before {
   transform: rotate(45deg);
 }
 
-button.learn-more .button-text {
+.button.learn-more .button-text {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   top: 0;
@@ -143,16 +143,16 @@ button.learn-more .button-text {
   text-transform: uppercase;
 }
 
-button:hover .circle {
+.button:hover .circle {
   width: 100%;
 }
 
-button:hover .circle .icon.arrow {
+.button:hover .circle .icon.arrow {
   background: #fff;
   transform: translate(1rem, 0);
 }
 
-button:hover .button-text {
+.button:hover .button-text {
   color: #fff;
 }
 
@@ -163,7 +163,7 @@ button:hover .button-text {
   margin-top: 10px;
 }
 
-button {
+.button {
   margin: 5px 0;
   -webkit-tap-highlight-color: transparent;
 }
@@ -296,7 +296,7 @@ button {
   color: #ffffff;
 }
 
-.popup {
+.popup, .swal-modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -327,7 +327,7 @@ button {
   box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.863);
 }
 
-.close-button {
+.close-.button {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -337,7 +337,7 @@ button {
   cursor: pointer;
 }
 
-.close-button:hover {
+.close-.button:hover {
   background-color: #cccccc;
 }
 
@@ -422,4 +422,11 @@ a {
   font-weight: bold;
   cursor: pointer;
   color: #fff;
+}
+.swal-text {
+  color: white;
+}
+
+.swal-button {
+  opacity: .9;
 }
